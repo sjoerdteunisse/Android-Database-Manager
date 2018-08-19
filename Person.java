@@ -19,6 +19,7 @@ public class Person extends EntityHelper {
     public Person(Context ctx) {
         super(ctx);
 
+        //Move
         sqLiteDatabase.execSQL(createTable());
 
     }

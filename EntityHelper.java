@@ -19,20 +19,16 @@ public class EntityHelper extends SQLiteOpenHelper {
     private String createTableScript(){return "";}
     private String dropTableScript(){return ""; }
 
-    public boolean addEntity(Object entity){ return false; };
-    public boolean updateEntity(String Id, Object entity){ return false; };
+    public boolean addEntity(Object entity) { return false; };
+    public boolean updateEntity(String Id, Object entity) { return false; };
     public boolean deleteEntity(String Id) { return false; };
-    public int getEntityById(String Id){ return 0; };
-
-
+    public int getEntityById(String Id) { return 0; };
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
     }
 }
