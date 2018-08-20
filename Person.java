@@ -59,7 +59,7 @@ public class Person extends EntityHelper {
     public int getEntityById(String Id) {
         String whereClause = PERSON_COL_FIRSTNAME +" LIKE '%"+Id+"%'";
 
-        Cursor c = sqLiteDatabase.query(true, this.getClass().getName(), null,
+        Cursor c = sqLiteDatabase.query(true, PERSON_TBL_NAME, null,
                 whereClause, null, null, null, null, null);
 
         if(c.getCount() >0)
