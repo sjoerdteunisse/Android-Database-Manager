@@ -10,5 +10,5 @@ Usage:
 
 .addEntity (CRUD) should be placed in a Manager instead. 
 
-like
+like:
 DbManager.addEntity(person);
