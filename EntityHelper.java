@@ -12,12 +12,12 @@ public class EntityHelper extends SQLiteOpenHelper {
 
     public EntityHelper(Context ctx)
     {
-        super(ctx, "MyFirstThing", null, 2);
+        super(ctx, "DatabaseName", null, 1);
         sqLiteDatabase = getWritableDatabase();
     }
 
-    private String createTableScript(){return "";}
-    private String dropTableScript(){return ""; }
+    private String createTableScript() { return ""; }
+    private String dropTableScript() { return ""; }
 
     public boolean addEntity(Object entity) { return false; };
     public boolean updateEntity(String Id, Object entity) { return false; };
