@@ -20,8 +20,8 @@ Usage:
         //Deletes a user
         bool succes = databaseManager.deleteEntity(userID)
         
-
-        Copyright (c) 2018 [AXR (Sjoerd Teunisse)]
+        
+Copyright (c) 2018 [AXR (Sjoerd Teunisse)]
 
         Permission is hereby granted, free of charge, to any person obtaining a copy
         of this software and associated documentation files (the "Software"), to deal
