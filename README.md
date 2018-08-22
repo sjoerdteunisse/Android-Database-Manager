@@ -3,17 +3,25 @@ Android Database Manager
 Usage:
 
 
+        //Create database manager
         databaseManager = new DatabaseManager(this);
 
+        //Create entity
         Person person = new Person();
         person.firstName = "Peter";
         person.lastName = "Drama";
 
+         //Adds the specified entity
         databaseManager.addEntity(person);
 
-int userID = databaseManager.getEntityById(person, person.PERSON_COL_FIRSTNAME, "Peter");
+        //Gets the Id of the user
+        int userID = databaseManager.getEntityById(person, person.PERSON_COL_FIRSTNAME, "Peter");
+        
+        //Deletes a user
+        bool succes = databaseManager.deleteEntity(userID)
+        
 
-Copyright (c) 2018 [AXR (Sjoerd Teunisse)]
+        Copyright (c) 2018 [AXR (Sjoerd Teunisse)]
 
         Permission is hereby granted, free of charge, to any person obtaining a copy
         of this software and associated documentation files (the "Software"), to deal
