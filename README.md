@@ -9,7 +9,7 @@ Usage:
         //Create entity
         Person person = new Person();
         person.firstName = "Peter";
-        person.lastName = "Drama";
+        person.lastName = "Pan";
 
          //Adds the specified entity
         databaseManager.addEntity(person);
