@@ -1,14 +1,14 @@
 Android Database Manager
 
 Usage:
-        Person person = new Person(this);
-        person.firstName = "Jan";
-        person.lastName = "Drama";
-        person.addEntity(person);
 
 
+databaseManager = new DatabaseManager(this);
 
-.addEntity (CRUD) should be placed in a Manager instead. 
+Person person = new Person();
+person.firstName = "Peter";
+person.lastName = "Drama";
 
-like:
-DbManager.addEntity(person);
+databaseManager.addEntity(person);
+
+int userID = databaseManager.getEntityById(person, person.PERSON_COL_FIRSTNAME, "Peter");
