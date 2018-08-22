@@ -30,8 +30,8 @@ public class Entity {
     {
     }
 
-    private String createTableScript(){return "";}
-    private String dropTableScript(){return ""; }
+    private String createTableScript() { return "";}
+    private String dropTableScript() { return ""; }
 
     public Pair<String, ContentValues> addEntity(Entity entity) { return null; };
     public Pair<String, ContentValues> updateEntity(int Id, Entity entity) { return null; };
